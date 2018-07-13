@@ -13,7 +13,7 @@ class App extends Component {
       <Router>
         <div>
           <NavMenu />
-            <Grid columns={2} divided>
+            <Grid columns="equal" divided>
                 <Grid.Row>
                     <Grid.Column width={6}>
                         <Image src={profilePic} size="large" circular centered/>

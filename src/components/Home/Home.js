@@ -6,7 +6,7 @@ import './Home.css';
 class Home extends Component{
     render(){
         return(
-            <Grid>
+            <div>
                 <Jumbotron>
                     <h2>
                         Devin Encalada
@@ -16,7 +16,7 @@ class Home extends Component{
                 <Link to="/about">
                     <Button bsStyle="primary">About</Button>
                 </Link>
-            </Grid>
+            </div>
         )
     }
 }
