@@ -3,6 +3,16 @@ import { Container, Header, Button, Grid } from 'semantic-ui-react';
 import './Home.css';
 
 class Home extends Component{
+    generateButton(link, icon){
+        return(
+            <Grid.Column>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    <Button circular color={icon} icon={icon} />
+                </a>
+            </Grid.Column>
+        )
+
+    }
     render(){
         return(
                 <Container text>
@@ -29,22 +39,10 @@ class Home extends Component{
                             />
                         </Grid.Row>
                         <Grid.Row columns={10}>
-                            <Grid.Column>
-                                <a href="https://www.facebook.com/devin.encalada" target="_blank" rel="noopener noreferrer">
-                                    <Button circular color='facebook' icon='facebook' />
-                                </a>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <a href="https://twitter.com/devin_encalada" target="_blank" rel="noopener noreferrer">
-                                    <Button circular color='twitter' icon='twitter' />
-                                </a>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <a href="https://www.linkedin.com/in/john-encalada-b6680b146" target="_blank" rel="noopener noreferrer">
-                                    <Button circular color='linkedin' icon='linkedin' />
-                                </a>
-                            </Grid.Column>
-
+                            {this.generateButton("https://www.facebook.com/devin.encalada", "facebook")}
+                            {this.generateButton("https://twitter.com/devin_encalada", "twitter")}
+                            {this.generateButton("https://www.instagram.com/devinencalada", "instagram")}
+                            {this.generateButton("https://www.linkedin.com/in/john-encalada-b6680b146", "linkedin")}
                         </Grid.Row>
                     </Grid>
                 </Container>
