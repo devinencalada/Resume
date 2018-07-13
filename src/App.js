@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import { Grid, Image } from 'semantic-ui-react';
-import profilePic from './images/profilePic.png'
 import Home from './components/Home';
 import About from './components/About';
 import NavMenu from './components/NavMenu';
@@ -13,17 +12,8 @@ class App extends Component {
       <Router>
         <div>
           <NavMenu />
-            <Grid columns="equal" divided>
-                <Grid.Row>
-                    <Grid.Column width={6}>
-                        <Image src={profilePic} size="large" circular centered/>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/about" component={About} />
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
         </div>
       </Router>
     );

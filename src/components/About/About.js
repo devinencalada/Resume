@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import './About.css';
+import { Grid, Image } from 'semantic-ui-react';
+import profilePic from '../../images/profilePic.png';
 
 class About extends Component{
     render(){
         return(
-            <div>
-                About Me
-            </div>
+            <Grid columns="equal" divided>
+                <Grid.Row>
+                    <Grid.Column width={6}>
+                        <Image src={profilePic} size="large" circular centered/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        Information
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
         )
     }
 }

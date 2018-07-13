@@ -9,7 +9,7 @@ class NavMenu extends Component{
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">Devin Encalada</Link>
+                        <Link to="/">My Portfolio</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle/>
                 </Navbar.Header>
