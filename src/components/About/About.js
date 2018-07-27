@@ -3,6 +3,8 @@ import './About.css';
 import { Grid, Image } from 'semantic-ui-react';
 import profilePic from '../../images/profilePic.png';
 
+import './About.css';
+
 class About extends Component{
     render(){
         return(

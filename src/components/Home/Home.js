@@ -5,16 +5,19 @@ import './Home.css';
 class Home extends Component{
     generateButton(link, icon){
         return(
-            <Grid.Column>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                    <Button circular color={icon} icon={icon} />
-                </a>
-            </Grid.Column>
+            <div className="button">
+                <Grid.Column>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        <Button circular color={icon} icon={icon} />
+                    </a>
+                </Grid.Column>
+            </div>
         )
 
     }
     render(){
         return(
+            <div className="home">
                 <Container text>
                     <Grid>
                         <Grid.Row>
@@ -46,6 +49,7 @@ class Home extends Component{
                         </Grid.Row>
                     </Grid>
                 </Container>
+            </div>
         )
     }
 }
